@@ -2,10 +2,6 @@
 
 A 3-VM setup that demonstrates a load-balanced deployment using **Nginx**, **WordPress (Apache)**, **Django (Gunicorn)**, and a **BIND9 DNS server**.
 
----
-
-## 🧱 VM Roles
-
 - **Load Balancer VM**
   - Nginx reverse proxy
   - BIND9 DNS (`wp.razeeka.local`, `dj.razeeka.local`)
