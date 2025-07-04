@@ -1,0 +1,35 @@
+
+	upstream backend1 {
+       	server wp.razeeka.local;
+	server wp2.razeeka.local;
+       	 }
+
+
+server {
+	listen 80;
+	server_name wordpress.razeeka.local;
+
+       	location / {
+	       	proxy_pass http://backend1;
+       	}
+}
+
+
+
+
+
+        upstream backend2 {
+        server dj.razeeka.local:8080;
+        server dj2.razeeka.local:8080;
+         }
+
+
+server {
+        listen 8080;
+	server_name django.razeeka.local;
+
+        location / {
+                proxy_pass http://backend2;
+        }
+}
+
