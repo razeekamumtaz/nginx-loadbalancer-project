@@ -23,6 +23,7 @@ A 3-VM setup that demonstrates a load-balanced deployment using **Nginx**, **Wor
 ## 🗂️ Project Structure
 
 nginx-loadbalancer-project/
+
 ├── backend1/ # Apache, WordPress, Django & Gunicorn configs
 
 ├── backend2/ # Same as backend1
